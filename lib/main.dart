@@ -17,15 +17,26 @@ class Home extends StatelessWidget {
         title: const Text('Learning Flutter'),
         centerTitle: true,
       ),
-      body: Container(
-        padding: EdgeInsets.all(50),
-        color: Colors.grey,
-        child: const Text("Hello Adil!",
-        style: TextStyle(
-          color: Colors.white,
-          fontFamily: 'TheNautigal',
-        ),),
-      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.yellow,
+            child: Text('One'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.green,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.red,
+            child: Text('three'),
+          ),
+        ],
+      )
     );
   }
 }
