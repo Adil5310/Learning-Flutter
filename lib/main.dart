@@ -18,22 +18,39 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.yellow,
-            child: Text('One'),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+
+                border: OutlineInputBorder(),
+                labelText: 'Username',
+                hintText: '@example'
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                  hintText: 'xxxxxxxxx'
+              ),
+            ),
           ),
           Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.green,
-            child: Text('two'),
-          ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.red,
-            child: Text('three'),
+            width: MediaQuery.of(context).size.width*0.9,
+            height: MediaQuery.of(context).size.height*0.06,
+            child: ElevatedButton(
+              style:  ButtonStyle(
+               backgroundColor: MaterialStateProperty.all(Colors.cyanAccent),
+              ),
+              onPressed: (){},
+                child: const Text('Login'),),
           ),
         ],
       )
