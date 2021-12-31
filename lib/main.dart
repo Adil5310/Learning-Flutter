@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
         title: const Text('Learning Flutter'),
         centerTitle: true,
       ),
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
